@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Cards from './components/cards';
+import {datas} from './data';
 
 function App() {
+  const movielist= datas.movies;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className='card-container'>
+      {
+        movielist && movielist.map((movies)=>
+        ( <Cards key={movies.id} movieName={movies.title} casts={movies.actors} director={movies.director} image={movies.posterUrl}/>)   
+        )
+      }
+      </div>
     </div>
   );
 }
