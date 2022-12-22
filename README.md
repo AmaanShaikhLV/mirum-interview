@@ -1,12 +1,12 @@
-# Movie Web Application
+# Mirub Movie Web Application
 
-Welcome to the Movie web application.
+Welcome to the Mirub Movie web application.
 
 - Clone mirum-interview repo.
 - Run npm install to install all dependencies.
-- Use available scripts for further actions.
+- Use scripts below to setup the application.
 
-## Available Scripts
+## Scripts
 
 In the project directory, you can run:
 

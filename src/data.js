@@ -1,4 +1,4 @@
-export const datas = {
+const movieJson = {
     genres: [
       "Comedy",
       "Fantasy",
@@ -1801,3 +1801,5 @@ export const datas = {
       },
     ],
   };
+
+  export default movieJson.movies;

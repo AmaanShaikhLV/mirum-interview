@@ -1,17 +1,21 @@
-import './App.css';
-import Cards from './components/cards';
-import {datas} from './data';
+import "./App.css";
+import Cards from "./components/Movies/movieCard";
+import movieList from "./data";
 
 function App() {
-  const movielist= datas.movies;
   return (
     <div className="container">
-      <div className='card-container'>
-      {
-        movielist && movielist.map((movies)=>
-        ( <Cards key={movies.id} movieName={movies.title} casts={movies.actors} director={movies.director} image={movies.posterUrl}/>)   
-        )
-      }
+      <div className="card-container">
+        {movieList &&
+          movieList.map((movies) => (
+            <Cards
+              key={movies.id}
+              movieName={movies.title}
+              casts={movies.actors}
+              director={movies.director}
+              image={movies.posterUrl}
+            />
+          ))}
       </div>
     </div>
   );
