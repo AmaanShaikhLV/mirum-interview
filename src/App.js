@@ -12,7 +12,7 @@ function App() {
               key={movies.id}
               movieName={movies.title}
               casts={movies.actors}
-              director={movies.director}
+              directors={movies.director}
               image={movies.posterUrl}
             />
           ))}

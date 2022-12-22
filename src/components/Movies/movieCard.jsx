@@ -3,7 +3,7 @@ import "./style.css";
 import PlaceholderImage from "../../Image/placeholder.jpg";
 import PropTypes from "prop-types";
 
-const movieCard = ({ image, movieName, casts, director }) => {
+const movieCard = ({ image, movieName, casts, directors }) => {
   const ReplaceInvalidSrc = (e) => {
     e.target.src = PlaceholderImage;
   };
@@ -22,7 +22,7 @@ const movieCard = ({ image, movieName, casts, director }) => {
       <label className="contentTitle">Starring</label>
       <label className="contentDesc">{casts}</label>
       <label className="contentTitle">Director</label>
-      <label className="contentDesc">{director}</label>
+      <label className="contentDesc">{directors}</label>
     </div>
   );
 }
@@ -30,7 +30,7 @@ movieCard.prototype = {
     image: PropTypes.string.isRequired,
     movieName: PropTypes.string.isRequired,
     casts: PropTypes.string.isRequired,
-    director: PropTypes.string.isRequired,
+    directors: PropTypes.string.isRequired,
   };
 
   export default movieCard;
